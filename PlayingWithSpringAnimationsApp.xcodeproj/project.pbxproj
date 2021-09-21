@@ -13,6 +13,7 @@
 		5F3E01C726FA84F7000CD8C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E01C526FA84F7000CD8C8 /* Main.storyboard */; };
 		5F3E01C926FA84F9000CD8C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E01C826FA84F9000CD8C8 /* Assets.xcassets */; };
 		5F3E01CC26FA84F9000CD8C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3E01CA26FA84F9000CD8C8 /* LaunchScreen.storyboard */; };
+		F8BD64F9A90916F2F3299A0E /* Pods_PlayingWithSpringAnimationsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C692767433EE35020255BE42 /* Pods_PlayingWithSpringAnimationsApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		5F3E01C826FA84F9000CD8C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F3E01CB26FA84F9000CD8C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F3E01CD26FA84F9000CD8C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835BF9D6BD92EF6D62D69129 /* Pods-PlayingWithSpringAnimationsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithSpringAnimationsApp.release.xcconfig"; path = "Target Support Files/Pods-PlayingWithSpringAnimationsApp/Pods-PlayingWithSpringAnimationsApp.release.xcconfig"; sourceTree = "<group>"; };
+		9A23D95230C591195981EC79 /* Pods-PlayingWithSpringAnimationsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayingWithSpringAnimationsApp.debug.xcconfig"; path = "Target Support Files/Pods-PlayingWithSpringAnimationsApp/Pods-PlayingWithSpringAnimationsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C692767433EE35020255BE42 /* Pods_PlayingWithSpringAnimationsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayingWithSpringAnimationsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BD64F9A90916F2F3299A0E /* Pods_PlayingWithSpringAnimationsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B5DCD38CFEABC25E4805B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C692767433EE35020255BE42 /* Pods_PlayingWithSpringAnimationsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5F3E01B326FA84F7000CD8C8 = {
 			isa = PBXGroup;
 			children = (
 				5F3E01BE26FA84F7000CD8C8 /* PlayingWithSpringAnimationsApp */,
 				5F3E01BD26FA84F7000CD8C8 /* Products */,
+				96CF3173A553343649FA39B4 /* Pods */,
+				5B5DCD38CFEABC25E4805B19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = PlayingWithSpringAnimationsApp;
 			sourceTree = "<group>";
 		};
+		96CF3173A553343649FA39B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A23D95230C591195981EC79 /* Pods-PlayingWithSpringAnimationsApp.debug.xcconfig */,
+				835BF9D6BD92EF6D62D69129 /* Pods-PlayingWithSpringAnimationsApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F3E01D026FA84F9000CD8C8 /* Build configuration list for PBXNativeTarget "PlayingWithSpringAnimationsApp" */;
 			buildPhases = (
+				310093FC514ED4504ABF956F /* [CP] Check Pods Manifest.lock */,
 				5F3E01B826FA84F7000CD8C8 /* Sources */,
 				5F3E01B926FA84F7000CD8C8 /* Frameworks */,
 				5F3E01BA26FA84F7000CD8C8 /* Resources */,
+				063D099F40D215318C5FDAD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		063D099F40D215318C5FDAD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayingWithSpringAnimationsApp/Pods-PlayingWithSpringAnimationsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayingWithSpringAnimationsApp/Pods-PlayingWithSpringAnimationsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayingWithSpringAnimationsApp/Pods-PlayingWithSpringAnimationsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		310093FC514ED4504ABF956F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayingWithSpringAnimationsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5F3E01B826FA84F7000CD8C8 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		5F3E01D126FA84F9000CD8C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A23D95230C591195981EC79 /* Pods-PlayingWithSpringAnimationsApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,12 +376,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5F3E01D226FA84F9000CD8C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 835BF9D6BD92EF6D62D69129 /* Pods-PlayingWithSpringAnimationsApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -334,7 +405,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
