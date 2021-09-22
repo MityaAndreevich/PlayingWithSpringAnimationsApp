@@ -20,7 +20,7 @@
                                 <rect key="frame" x="87" y="104" width="240" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-2V-h14">
-                                        <rect key="frame" x="99.5" y="8.5" width="41.5" height="113.5"/>
+                                        <rect key="frame" x="99.5" y="31.5" width="41.5" height="67"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckp-Ja-mDO">
                                                 <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
@@ -28,14 +28,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FR0-j0-Phy">
-                                                <rect key="frame" x="0.0" y="46.5" width="41.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ2-BN-d6O">
-                                                <rect key="frame" x="0.0" y="93" width="41.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="46.5" width="41.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -116,6 +110,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animationCurveLabel" destination="hJ2-BN-d6O" id="7EF-l7-lmw"/>
+                        <outlet property="animationNameLabel" destination="Ckp-Ja-mDO" id="maR-37-5Dk"/>
                         <outlet property="springAnimationView" destination="7T8-gV-eGK" id="0su-tv-LkD"/>
                     </connections>
                 </viewController>
