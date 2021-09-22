@@ -20,16 +20,16 @@
                                 <rect key="frame" x="87" y="104" width="240" height="130"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Jgf-2V-h14">
-                                        <rect key="frame" x="99.5" y="31.5" width="41.5" height="67"/>
+                                        <rect key="frame" x="10" y="31.5" width="220" height="67"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckp-Ja-mDO">
-                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckp-Ja-mDO">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ2-BN-d6O">
-                                                <rect key="frame" x="0.0" y="46.5" width="41.5" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJ2-BN-d6O">
+                                                <rect key="frame" x="0.0" y="46.5" width="220" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -39,8 +39,10 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
+                                    <constraint firstItem="Jgf-2V-h14" firstAttribute="leading" secondItem="7T8-gV-eGK" secondAttribute="leading" constant="10" id="9Bk-ah-QDL"/>
                                     <constraint firstAttribute="height" constant="130" id="AUm-iQ-tpp"/>
                                     <constraint firstItem="Jgf-2V-h14" firstAttribute="centerY" secondItem="7T8-gV-eGK" secondAttribute="centerY" id="OJC-5a-NAf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jgf-2V-h14" secondAttribute="trailing" constant="10" id="VCn-jh-Aqi"/>
                                     <constraint firstItem="Jgf-2V-h14" firstAttribute="centerX" secondItem="7T8-gV-eGK" secondAttribute="centerX" id="zCm-OO-6ra"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -112,6 +114,7 @@
                     <connections>
                         <outlet property="animationCurveLabel" destination="hJ2-BN-d6O" id="7EF-l7-lmw"/>
                         <outlet property="animationNameLabel" destination="Ckp-Ja-mDO" id="maR-37-5Dk"/>
+                        <outlet property="animationRunButton" destination="sRg-zH-yaf" id="Ymc-yh-O1K"/>
                         <outlet property="springAnimationView" destination="7T8-gV-eGK" id="0su-tv-LkD"/>
                     </connections>
                 </viewController>

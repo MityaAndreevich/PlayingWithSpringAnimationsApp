@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var animationNameLabel: UILabel!
     @IBOutlet weak var animationCurveLabel: UILabel!
+    @IBOutlet weak var animationRunButton: SpringButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,15 +25,12 @@ class ViewController: UIViewController {
         animationCurveLabel.text = "Here will appear curve name"
     }
 
-    @IBAction func runSpringAnimation(_ sender: SpringButton) {
-        
+    @IBAction func runSpringAnimation(_: SpringButton) {
+        let nextAnimation = Animation.getAnimation()
+      
         setAnimation()
         setLabelsDescription()
-        
-        //springAnimationView.animation = allAnimations.animation
-        //springAnimationView.curve = allAnimations.curve
-       // springAnimationView.animate()
-        
+        animationRunButton.setTitle("Next: \(nextAnimation)", for: .normal)
     }
     
     private func setAnimation() {
