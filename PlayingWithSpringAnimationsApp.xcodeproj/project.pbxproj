@@ -87,6 +87,24 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		5F025F4326FBF61A004E4DD7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E01C826FA84F9000CD8C8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5F025F4426FBF63B004E4DD7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E01BF26FA84F7000CD8C8 /* AppDelegate.swift */,
+				5F3E01C126FA84F7000CD8C8 /* SceneDelegate.swift */,
+				5F3E01CD26FA84F9000CD8C8 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		5F3E01B326FA84F7000CD8C8 = {
 			isa = PBXGroup;
 			children = (
@@ -108,14 +126,12 @@
 		5F3E01BE26FA84F7000CD8C8 /* PlayingWithSpringAnimationsApp */ = {
 			isa = PBXGroup;
 			children = (
-				5F3E01BF26FA84F7000CD8C8 /* AppDelegate.swift */,
-				5F3E01C126FA84F7000CD8C8 /* SceneDelegate.swift */,
-				5F025F3F26FB64C3004E4DD7 /* Storyboards */,
 				5F025F3E26FB6484004E4DD7 /* ViewControllers */,
-				5F3E01C826FA84F9000CD8C8 /* Assets.xcassets */,
-				5F3E01CD26FA84F9000CD8C8 /* Info.plist */,
 				5F025F3D26FB6455004E4DD7 /* Models */,
 				5F025F4226FB6EC7004E4DD7 /* Services */,
+				5F025F3F26FB64C3004E4DD7 /* Storyboards */,
+				5F025F4426FBF63B004E4DD7 /* App */,
+				5F025F4326FBF61A004E4DD7 /* Resources */,
 			);
 			path = PlayingWithSpringAnimationsApp;
 			sourceTree = "<group>";
@@ -400,7 +416,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlayingWithSpringAnimationsApp/Info.plist;
+				INFOPLIST_FILE = PlayingWithSpringAnimationsApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -429,7 +445,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SLQ3BB6947;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PlayingWithSpringAnimationsApp/Info.plist;
+				INFOPLIST_FILE = PlayingWithSpringAnimationsApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
