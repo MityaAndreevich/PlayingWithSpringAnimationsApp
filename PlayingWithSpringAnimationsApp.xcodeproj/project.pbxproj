@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F025F3C26FB644B004E4DD7 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F3B26FB644B004E4DD7 /* Animations.swift */; };
+		5F025F4126FB6EBE004E4DD7 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F025F4026FB6EBE004E4DD7 /* DataManager.swift */; };
 		5F3E01C026FA84F7000CD8C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E01BF26FA84F7000CD8C8 /* AppDelegate.swift */; };
 		5F3E01C226FA84F7000CD8C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E01C126FA84F7000CD8C8 /* SceneDelegate.swift */; };
 		5F3E01C426FA84F7000CD8C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3E01C326FA84F7000CD8C8 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F025F3B26FB644B004E4DD7 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		5F025F4026FB6EBE004E4DD7 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5F3E01BC26FA84F7000CD8C8 /* PlayingWithSpringAnimationsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayingWithSpringAnimationsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3E01BF26FA84F7000CD8C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F3E01C126FA84F7000CD8C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5F025F3D26FB6455004E4DD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F025F3B26FB644B004E4DD7 /* Animations.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F025F3E26FB6484004E4DD7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E01C326FA84F7000CD8C8 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5F025F3F26FB64C3004E4DD7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F3E01C526FA84F7000CD8C8 /* Main.storyboard */,
+				5F3E01CA26FA84F9000CD8C8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F025F4226FB6EC7004E4DD7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5F025F4026FB6EBE004E4DD7 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5F3E01B326FA84F7000CD8C8 = {
 			isa = PBXGroup;
 			children = (
@@ -73,11 +110,12 @@
 			children = (
 				5F3E01BF26FA84F7000CD8C8 /* AppDelegate.swift */,
 				5F3E01C126FA84F7000CD8C8 /* SceneDelegate.swift */,
-				5F3E01C326FA84F7000CD8C8 /* ViewController.swift */,
-				5F3E01C526FA84F7000CD8C8 /* Main.storyboard */,
+				5F025F3F26FB64C3004E4DD7 /* Storyboards */,
+				5F025F3E26FB6484004E4DD7 /* ViewControllers */,
 				5F3E01C826FA84F9000CD8C8 /* Assets.xcassets */,
-				5F3E01CA26FA84F9000CD8C8 /* LaunchScreen.storyboard */,
 				5F3E01CD26FA84F9000CD8C8 /* Info.plist */,
+				5F025F3D26FB6455004E4DD7 /* Models */,
+				5F025F4226FB6EC7004E4DD7 /* Services */,
 			);
 			path = PlayingWithSpringAnimationsApp;
 			sourceTree = "<group>";
@@ -88,7 +126,6 @@
 				9A23D95230C591195981EC79 /* Pods-PlayingWithSpringAnimationsApp.debug.xcconfig */,
 				835BF9D6BD92EF6D62D69129 /* Pods-PlayingWithSpringAnimationsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +245,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F3E01C426FA84F7000CD8C8 /* ViewController.swift in Sources */,
+				5F025F4126FB6EBE004E4DD7 /* DataManager.swift in Sources */,
 				5F3E01C026FA84F7000CD8C8 /* AppDelegate.swift in Sources */,
+				5F025F3C26FB644B004E4DD7 /* Animations.swift in Sources */,
 				5F3E01C226FA84F7000CD8C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
