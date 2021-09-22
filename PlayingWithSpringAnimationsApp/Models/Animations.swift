@@ -14,10 +14,14 @@ struct Animation {
 
 extension Animation {
     
-    static func getAnimation() -> Animation {
+    static func getAnimation(with animation: String) -> Animation {
         Animation(
-            animation: DataManager.shared.animationNames.randomElement() ?? "",
+            animation: animation,
             curve: DataManager.shared.curveNames.randomElement() ?? ""
         )
+    }
+    
+    static func getNextAnimation() -> String {
+        DataManager.shared.animationNames.randomElement() ?? ""
     }
 }
