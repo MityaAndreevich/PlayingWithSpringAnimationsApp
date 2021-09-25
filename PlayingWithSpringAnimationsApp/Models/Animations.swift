@@ -10,18 +10,21 @@ import Foundation
 struct Animation {
     let animation: String
     let curve: String
+    
+    var desciption: String {
+        """
+preset: \(animation)
+curve: \(curve)
+"""
+    }
 }
 
 extension Animation {
     
-    static func getAnimation(with animation: String) -> Animation {
+    static func getAnimation() -> Animation {
         Animation(
-            animation: animation,
+            animation: DataManager.shared.animationNames.randomElement() ?? "",
             curve: DataManager.shared.curveNames.randomElement() ?? ""
         )
-    }
-    
-    static func getNextAnimation() -> String {
-        DataManager.shared.animationNames.randomElement() ?? ""
     }
 }
