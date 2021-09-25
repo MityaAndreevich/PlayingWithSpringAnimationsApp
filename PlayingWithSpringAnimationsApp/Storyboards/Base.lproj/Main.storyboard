@@ -100,7 +100,6 @@
                     </view>
                     <connections>
                         <outlet property="animationNameLabel" destination="Ckp-Ja-mDO" id="maR-37-5Dk"/>
-                        <outlet property="animationRunButton" destination="sRg-zH-yaf" id="Ymc-yh-O1K"/>
                         <outlet property="springAnimationView" destination="7T8-gV-eGK" id="0su-tv-LkD"/>
                     </connections>
                 </viewController>

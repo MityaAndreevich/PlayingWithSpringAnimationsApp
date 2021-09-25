@@ -13,9 +13,9 @@ struct Animation {
     
     var desciption: String {
         """
-preset: \(animation)
-curve: \(curve)
-"""
+        preset: \(animation)
+        curve: \(curve)
+        """
     }
 }
 
